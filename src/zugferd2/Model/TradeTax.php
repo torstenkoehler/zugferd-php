@@ -81,7 +81,7 @@ class TradeTax
         ?string $rateApplicablePercent = null,
         ?string $exemptionReason = null,
         ?string $exemptionReasonCode = null,
-        ?DateTime $taxPointDate = null,
+        ?Date $taxPointDate = null,
         ?string $dueDateTypeCode = null,
     ): self {
         $self = new self();
