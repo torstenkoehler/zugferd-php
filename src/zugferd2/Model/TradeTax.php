@@ -60,10 +60,10 @@ class TradeTax
     #[JMS\SerializedName('ExemptionReasonCode')]
     public ?string $exemptionReasonCode = null;
 
-    #[JMS\Type(DateTime::class)]
+    #[JMS\Type(Date::class)]
     #[JMS\XmlElement(cdata: false, namespace: 'urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100')]
     #[JMS\SerializedName('TaxPointDate')]
-    public ?DateTime $taxPointDate = null;
+    public ?Date $taxPointDate = null;
 
     #[JMS\Type('string')]
     #[JMS\XmlElement(cdata: false, namespace: 'urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100')]
